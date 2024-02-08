@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+:root {
+  --main-white: #fff;
+  --black-100: #111;
+  --gray-500: #E5E5E5;
+}
+
+.container {
+  padding: 0 48px;
+}

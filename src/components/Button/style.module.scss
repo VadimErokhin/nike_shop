@@ -1,4 +1,27 @@
 .btn {
-  padding: 10px;
-  background-color: aqua;
+  padding: 7.5px 22px;
+  background-color: var(--black-100);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main-white);
+  border: none;
+  border-radius: 30px;
+}
+
+.info {
+  background-color: var(--gray-500);
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.large {
+  width: 48px;
+  height: 48px;
+}
+
+.small {
+  width: 30px;
+  height: 30px;
 }
