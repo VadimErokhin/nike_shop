@@ -7,6 +7,7 @@ interface ButtonProps {
   type?: ButtonType;
   circle?: boolean;
   size?: ButtonSize;
+  className?: string;
 }
 
 function Button(props: ButtonProps) {
@@ -33,8 +34,12 @@ function Button(props: ButtonProps) {
       resultClasses += ` ${style[props.size]}`;
     }
 
+    if (props.className) {
+      resultClasses += ` ${props.className}`;
+    }
+
     return resultClasses;
-  }, [props.type, props.size, props.circle]);
+  }, [props.type, props.size, props.circle, props.className]);
 
   return <button className={classes}>{props.children}</button>;
 }
