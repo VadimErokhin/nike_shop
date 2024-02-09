@@ -13,15 +13,24 @@
 }
 
 .circle {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  max-height: 42px;
   border-radius: 100%;
 }
 
 .circle.large {
   width: 48px;
   height: 48px;
+  max-width: 48px;
+  max-height: 48px;
 }
 
 .circle.small {
   width: 30px;
   height: 30px;
+  max-width: 30px;
+  max-height: 30px;
 }
