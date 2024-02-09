@@ -1,12 +1,12 @@
 import style from "./style.module.scss";
 import { useMemo } from "react";
-import { ButtonType, CircleSize } from "../types";
+import { ButtonSize, ButtonType } from "../types";
 
 interface ButtonProps {
   children: React.ReactNode;
   type?: ButtonType;
   circle?: boolean;
-  size?: CircleSize;
+  size?: ButtonSize;
 }
 
 function Button(props: ButtonProps) {
@@ -26,17 +26,15 @@ function Button(props: ButtonProps) {
     }
 
     if (props.circle) {
-      if (props.size === CircleSize.Large) {
-        resultClasses += ` ${style.circle} ${style.large}`;
-      }
+      resultClasses += ` ${style.circle}`;
+    }
 
-      if (props.size === CircleSize.Small) {
-        resultClasses += ` ${style.circle} ${style.small}`;
-      }
+    if (props.size) {
+      resultClasses += ` ${style[props.size]}`;
     }
 
     return resultClasses;
-  }, [props.type, props.circle]);
+  }, [props.type, props.size, props.circle]);
 
   return <button className={classes}>{props.children}</button>;
 }

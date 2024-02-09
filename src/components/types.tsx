@@ -3,7 +3,7 @@ export enum ButtonType {
   Info = "info",
 }
 
-export enum CircleSize {
+export enum ButtonSize {
   Large = "large",
   Small = "small",
 }
