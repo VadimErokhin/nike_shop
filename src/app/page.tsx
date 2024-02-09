@@ -21,13 +21,13 @@ export default function Home() {
       </Button>
 
       <Button
-        className={style.left_btn}
+        className={style.leftBtn}
         type={ButtonType.Info}
         circle
         size={ButtonSize.Large}
       >
         <svg
-          className={style.left_arrow}
+          className={style.leftArrow}
           width="24"
           height="25"
           viewBox="0 0 24 25"
@@ -42,13 +42,13 @@ export default function Home() {
         </svg>
       </Button>
       <Button
-        className={style.right_btn}
+        className={style.rightBtn}
         type={ButtonType.Info}
         circle
         size={ButtonSize.Large}
       >
         <svg
-          className={style.right_arrow}
+          className={style.rightArrow}
           width="24"
           height="25"
           viewBox="0 0 24 25"
