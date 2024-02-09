@@ -1,6 +1,7 @@
 import style from "./page.module.scss";
 import Header from "@/components/Header";
 import Button from "@/components/Button";
+import Arrow from "@/assets/img/arrow.svg";
 
 import { Inter } from "next/font/google";
 import { ButtonSize, ButtonType } from "@/components/types";
@@ -26,41 +27,16 @@ export default function Home() {
         circle
         size={ButtonSize.Large}
       >
-        <svg
-          className={style.leftArrow}
-          width="24"
-          height="25"
-          viewBox="0 0 24 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8.47363 19.3256L15.4396 12.3596L8.47363 5.39258"
-            stroke="#111111"
-            stroke-width="1.5"
-          />
-        </svg>
+        <Arrow className={style.leftArrow} />
       </Button>
+
       <Button
         className={style.rightBtn}
         type={ButtonType.Info}
         circle
         size={ButtonSize.Large}
       >
-        <svg
-          className={style.rightArrow}
-          width="24"
-          height="25"
-          viewBox="0 0 24 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M8.47363 19.3256L15.4396 12.3596L8.47363 5.39258"
-            stroke="#111111"
-            stroke-width="1.5"
-          />
-        </svg>
+        <Arrow className={style.rightArrow} />
       </Button>
     </main>
   );
