@@ -8,6 +8,8 @@ interface ButtonProps {
   circle?: boolean;
   size?: ButtonSize;
   className?: string;
+  disabled?: boolean;
+  onClick?: () => void;
 }
 
 function Button(props: ButtonProps) {
@@ -22,7 +24,7 @@ function Button(props: ButtonProps) {
   const classes = useMemo(() => {
     let resultClasses = style.btn;
 
-    if (props.type === ButtonType.Info) {
+    if (type === ButtonType.Info) {
       resultClasses += ` ${style.info}`;
     }
 
@@ -39,9 +41,17 @@ function Button(props: ButtonProps) {
     }
 
     return resultClasses;
-  }, [props.type, props.size, props.circle, props.className]);
+  }, [type, props.size, props.circle, props.className]);
 
-  return <button className={classes}>{props.children}</button>;
+  return (
+    <button
+      onClick={props.onClick}
+      disabled={props.disabled}
+      className={classes}
+    >
+      {props.children}
+    </button>
+  );
 }
 
 export default Button;
