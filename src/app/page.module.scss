@@ -1,0 +1,21 @@
+.leftBtn {
+ position: relative;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.rightBtn {
+  position: relative;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
