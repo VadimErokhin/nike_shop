@@ -1,0 +1,36 @@
+.btn {
+  padding: 7.5px 22px;
+  background-color: var(--black-100);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--main-white);
+  border: none;
+  border-radius: 30px;
+}
+
+.info {
+  background-color: var(--gray-500);
+}
+
+.circle {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  max-width: 42px;
+  max-height: 42px;
+  border-radius: 100%;
+}
+
+.circle.large {
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.circle.small {
+  width: 30px;
+  height: 30px;
+  max-width: 30px;
+  max-height: 30px;
+}
