@@ -1,10 +1,19 @@
+import BaseInput from "../BaseInput";
 import style from "./style.module.scss";
 
-function SearchInput() {
+interface SearchInputProps {
+  value: string;
+  onInput: (newValue: string) => void;
+}
+
+function SearchInput(props: SearchInputProps) {
   return (
-    <div>
-      <input className={style.input} type="text" placeholder="Search" />
-    </div>
+    <BaseInput
+      type="text"
+      placeholder="Search"
+      value={props.value}
+      onInput={props.onInput}
+    />
   );
 }
 
