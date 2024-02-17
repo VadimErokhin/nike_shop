@@ -1,0 +1,21 @@
+.link {
+  position: relative;
+  padding: 10px 24px 10px 12px;
+  text-decoration: none;
+  color: var(--black-100);
+}
+
+.link:not(:last-child):after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  background-color: var(--black-100);
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.link:last-child {
+  padding: 10px 0 10px 12px;
+}

@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
   font-family: inherit;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
 }
 
 :root {

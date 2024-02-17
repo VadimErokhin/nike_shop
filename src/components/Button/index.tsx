@@ -32,6 +32,10 @@ function Button(props: ButtonProps) {
       resultClasses += ` ${style.circle}`;
     }
 
+    if (type === ButtonType.Navigation) {
+      resultClasses += ` ${style.navigation}`;
+    }
+
     if (props.size) {
       resultClasses += ` ${style[props.size]}`;
     }
