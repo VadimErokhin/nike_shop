@@ -1,11 +1,6 @@
-"use client";
-
-import NavLink from "@/components/NavLink";
 import style from "./style.module.scss";
 import Logo from "@/assets/img/logo.svg";
-import SearchInput from "@/components/SearchInput";
 
-import { useState } from "react";
 import PrimaryList from "./PrimaryList";
 import PrimaryControls from "./PrimaryControls";
 

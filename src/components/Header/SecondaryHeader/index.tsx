@@ -10,7 +10,7 @@ function SecondaryHeader() {
       <div className={`container ${style.wrapper}`}>
         <AirJordan />
 
-        <Button className={style.btn} type={ButtonType.Navigation}>
+        <Button className={style.btn} type={ButtonType.Connect}>
           Skip to main content
         </Button>
 

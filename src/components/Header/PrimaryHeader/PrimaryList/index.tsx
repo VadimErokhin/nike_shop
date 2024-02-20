@@ -1,47 +1,34 @@
-import NavLink from "@/components/NavLink";
+import { useId } from "react";
 import style from "./style.module.scss";
-import LinksList from "@/components/LinksList";
-
-interface NavItem {
-  name: string;
-  href: string;
-  id: number;
-}
-
-const navItems: Array<NavItem> = [
-  {
-    name: "New & Featured",
-    href: "#",
-    id: 1,
-  },
-  {
-    name: "Men",
-    href: "#",
-    id: 2,
-  },
-  {
-    name: "Women",
-    href: "#",
-    id: 3,
-  },
-  {
-    name: "Kids",
-    href: "#",
-    id: 4,
-  },
-  {
-    name: "Sale",
-    href: "#",
-    id: 5,
-  },
-  {
-    name: "SNKRS",
-    href: "#",
-    id: 6,
-  },
-];
+import LinksList, { NavItem } from "@/components/LinksList";
 
 function PrimaryList() {
+  const navItems: Array<NavItem> = [
+    {
+      name: "New & Featured",
+      href: "#",
+    },
+    {
+      name: "Men",
+      href: "#",
+    },
+    {
+      name: "Women",
+      href: "#",
+    },
+    {
+      name: "Kids",
+      href: "#",
+    },
+    {
+      name: "Sale",
+      href: "#",
+    },
+    {
+      name: "SNKRS",
+      href: "#",
+    },
+  ];
   return (
     <LinksList
       list={navItems}

@@ -1,7 +1,7 @@
 export enum ButtonType {
   Primary = "primary",
   Info = "info",
-  Navigation = "navigation",
+  Connect = "connect",
 }
 
 export enum ButtonSize {

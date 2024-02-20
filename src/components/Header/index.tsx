@@ -6,11 +6,9 @@ import style from "./style.module.scss";
 function Header() {
   return (
     <div>
-      <div>
-        <SecondaryHeader />
-        <PrimaryHeader />
-        <HeaderBanner />
-      </div>
+      <SecondaryHeader />
+      <PrimaryHeader />
+      <HeaderBanner />
     </div>
   );
 }

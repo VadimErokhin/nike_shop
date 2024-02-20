@@ -4,7 +4,6 @@ import style from "./style.module.scss";
 export interface NavItem {
   name: string;
   href: string;
-  id: number;
 }
 
 interface LinksListProps {
@@ -17,8 +16,8 @@ interface LinksListProps {
 function LinksList(props: LinksListProps) {
   return (
     <ul className={`${style.navItemsWrapper} ${props.className}`}>
-      {props.list.map((item) => (
-        <li className={props.isSeparated ? style.link : ""} key={item.id}>
+      {props.list.map((item, index) => (
+        <li className={props.isSeparated ? style.link : ""} key={index}>
           <NavLink className={props.classNameLink} href={item.href}>
             {item.name}
           </NavLink>

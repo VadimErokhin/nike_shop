@@ -32,8 +32,8 @@ function Button(props: ButtonProps) {
       resultClasses += ` ${style.circle}`;
     }
 
-    if (type === ButtonType.Navigation) {
-      resultClasses += ` ${style.navigation}`;
+    if (type === ButtonType.Connect) {
+      resultClasses += ` ${style.connect}`;
     }
 
     if (props.size) {
