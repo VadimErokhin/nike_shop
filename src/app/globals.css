@@ -3,6 +3,14 @@
   font-family: inherit;
 }
 
+ul {
+    list-style-type: none;
+}
+
+body {
+  margin: 0;
+}
+
 :root {
   --main-white: #fff;
   --black-100: #111;

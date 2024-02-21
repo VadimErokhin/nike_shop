@@ -6,6 +6,7 @@
   color: var(--main-white);
   border: none;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .info {
@@ -19,6 +20,11 @@
   max-width: 42px;
   max-height: 42px;
   border-radius: 100%;
+}
+
+.connect {
+  background-color: var(--main-white);
+  border-radius: initial;
 }
 
 .circle.large {
