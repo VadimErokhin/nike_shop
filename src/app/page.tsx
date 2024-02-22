@@ -11,6 +11,7 @@ import { ButtonSize, ButtonType } from "@/components/types";
 import { useState } from "react";
 import Hero from "@/components/pages/homePage/Hero";
 import HeroText from "@/components/pages/homePage/HeroText";
+import Slider from "@/components/Slider";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Header />
       <Hero />
       <HeroText />
+      <Slider title="Best of Air Max" sliderTitle="Shop" />
       {/* <SearchInput onInput={setValue} value={value} />
       <Button type={ButtonType.Info}>Notify Me</Button>
       <Button>Shop Air Max</Button>
