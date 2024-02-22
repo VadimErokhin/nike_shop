@@ -3,7 +3,7 @@ import { useMemo } from "react";
 import { ButtonSize, ButtonType } from "../types";
 
 interface ButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   type?: ButtonType;
   circle?: boolean;
   size?: ButtonSize;
