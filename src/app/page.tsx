@@ -9,6 +9,8 @@ import Arrow from "@/assets/img/arrow.svg";
 import { Inter } from "next/font/google";
 import { ButtonSize, ButtonType } from "@/components/types";
 import { useState } from "react";
+import Hero from "@/components/pages/homePage/Hero";
+import HeroText from "@/components/pages/homePage/HeroText";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -17,7 +19,9 @@ export default function Home() {
   return (
     <main className={inter.className}>
       <Header />
-      <SearchInput onInput={setValue} value={value} />
+      <Hero />
+      <HeroText />
+      {/* <SearchInput onInput={setValue} value={value} />
       <Button type={ButtonType.Info}>Notify Me</Button>
       <Button>Shop Air Max</Button>
       <Button circle>1C</Button>
@@ -44,7 +48,7 @@ export default function Home() {
         size={ButtonSize.Large}
       >
         <Arrow className={style.rightArrow} />
-      </Button>
+      </Button> */}
     </main>
   );
 }

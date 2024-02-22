@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 48px 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstLook {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.title {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.text {
+  margin: 0;
+  max-width: 470px;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.btn {
+  margin-right: 6px;
+}
